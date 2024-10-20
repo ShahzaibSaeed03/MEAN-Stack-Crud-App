@@ -17,7 +17,8 @@ app.get('/', (req, res) => {
 
  
 async function connectDB() {
-  await mongoose.connect("mongodb://localhost:27017",{dbName:"UserDb",});
+  await mongoose.connect("mongodb+srv://shahzaib:shahzaib03@users.j1oc6.mongodb.net/UserDb", 
+    {dbName:"UserDb",});
 }
 
 app.use(userRoute)

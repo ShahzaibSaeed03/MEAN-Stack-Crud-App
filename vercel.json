@@ -1,37 +1,15 @@
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/api/users",
-        "methods": ["POST"],
-        "dest": "/api/users.js"
-      },
-      {
-        "src": "/api/users",
-        "methods": ["GET"],
-        "dest": "/api/users.js"
-      },
-      {
-        "src": "/api/users/(.*)",
-        "methods": ["GET", "PUT", "DELETE"],
-        "dest": "/api/users/[...].js"
-      }
-    ],
-    "functions": {
-      "api/users.js": {
-        "memory": 1024,
-        "maxDuration": 10
-      },
-      "api/users/[...].js": {
-        "memory": 1024,
-        "maxDuration": 10
-      }
-    },
-    "build": {
-      "env": {
-        "MONGODB_URI": "mongodb+srv://shahzaib:shahzaib03@users.j1oc6.mongodb.net/UserDb",
-        "PORT": "3000"
-      }
+  "version": 2,
+  "functions": {
+    "users.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "build": {
+    "env": {
+      "MONGODB_URI": "mongodb+srv://shahzaib:shahzai03@users.j1oc6.mongodb.net/UserDb",
+      "PORT": "3000"
     }
   }
-  
+}

@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "users.js": {
+    "DB/users.js": {
       "memory": 1024,
       "maxDuration": 10
     }
